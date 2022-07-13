@@ -2,7 +2,7 @@
 
 #### 需要配置 nginx , rabbitmq , redis , elasticSearch
 
-location /FileService/ {
+         location /FileService/ {
 			proxy_pass http://localhost:5005/;
 			proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
